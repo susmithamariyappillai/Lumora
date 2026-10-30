@@ -1,0 +1,2028 @@
+[
+ {
+  "sku": "LUM-W-001",
+  "name": "Floral Puff Sleeve Crop Top",
+  "slug": "floral-puff-sleeve-crop-top",
+  "description": "A cropped top with puffed sleeves and a soft floral print. Light cotton-blend fabric.",
+  "category": "women",
+  "subcategory": "Tops",
+  "price": 1299,
+  "originalPrice": 1899,
+  "images": [
+   "/images/products/women/floral-puff-sleeve-crop-top.jpg"
+  ],
+  "colours": [
+   "Pink",
+   "Black",
+   "Beige"
+  ],
+  "sizes": [
+   "S",
+   "M",
+   "L",
+   "XL",
+   "XXL"
+  ],
+  "rating": 4.5,
+  "numReviews": 124,
+  "stock": 40,
+  "isNewArrival": true,
+  "isBestSeller": true,
+  "isFeatured": false,
+  "isActive": true,
+  "createdAt": "2026-10-19T18:00:00Z"
+ },
+ {
+  "sku": "LUM-W-002",
+  "name": "Green Floral Maxi Dress",
+  "slug": "green-floral-maxi-dress",
+  "description": "A full-length floral maxi dress with a flowing skirt and fitted bodice.",
+  "category": "women",
+  "subcategory": "Dresses",
+  "price": 2499,
+  "originalPrice": 0,
+  "images": [
+   "/images/products/women/green-floral-maxi-dress.jpg"
+  ],
+  "colours": [
+   "Green",
+   "Maroon",
+   "Beige"
+  ],
+  "sizes": [
+   "S",
+   "M",
+   "L",
+   "XL",
+   "XXL"
+  ],
+  "rating": 4.6,
+  "numReviews": 98,
+  "stock": 18,
+  "isNewArrival": false,
+  "isBestSeller": true,
+  "isFeatured": false,
+  "isActive": true,
+  "createdAt": "2026-10-19T12:00:00Z"
+ },
+ {
+  "sku": "LUM-W-003",
+  "name": "Embroidered Cotton Kurti",
+  "slug": "embroidered-cotton-kurti",
+  "description": "A straight-cut cotton kurti with embroidery at the neckline.",
+  "category": "women",
+  "subcategory": "Kurtis",
+  "price": 1799,
+  "originalPrice": 0,
+  "images": [
+   "/images/products/women/embroidered-cotton-kurti.jpg"
+  ],
+  "colours": [
+   "Green",
+   "Maroon",
+   "Beige"
+  ],
+  "sizes": [
+   "S",
+   "M",
+   "L",
+   "XL",
+   "XXL"
+  ],
+  "rating": 4.4,
+  "numReviews": 76,
+  "stock": 30,
+  "isNewArrival": true,
+  "isBestSeller": false,
+  "isFeatured": false,
+  "isActive": true,
+  "createdAt": "2026-10-19T06:00:00Z"
+ },
+ {
+  "sku": "LUM-W-004",
+  "name": "High Waist Straight Jeans",
+  "slug": "high-waist-straight-jeans",
+  "description": "High-rise straight-leg jeans in stretch denim for everyday wear.",
+  "category": "women",
+  "subcategory": "Jeans",
+  "price": 1999,
+  "originalPrice": 0,
+  "images": [
+   "/images/products/women/high-waist-straight-jeans.jpg"
+  ],
+  "colours": [
+   "Blue",
+   "Black",
+   "Grey"
+  ],
+  "sizes": [
+   "S",
+   "M",
+   "L",
+   "XL",
+   "XXL"
+  ],
+  "rating": 4.7,
+  "numReviews": 143,
+  "stock": 35,
+  "isNewArrival": false,
+  "isBestSeller": true,
+  "isFeatured": false,
+  "isActive": true,
+  "createdAt": "2026-10-19T00:00:00Z"
+ },
+ {
+  "sku": "LUM-W-005",
+  "name": "Classic Black Top",
+  "slug": "classic-black-top",
+  "description": "A simple black top with sheer sleeves. Easy to pair with jeans or skirts.",
+  "category": "women",
+  "subcategory": "Tops",
+  "price": 1099,
+  "originalPrice": 1599,
+  "images": [
+   "/images/products/women/classic-black-top.jpg"
+  ],
+  "colours": [
+   "Black",
+   "Beige",
+   "Grey"
+  ],
+  "sizes": [
+   "S",
+   "M",
+   "L",
+   "XL",
+   "XXL"
+  ],
+  "rating": 4.3,
+  "numReviews": 67,
+  "stock": 22,
+  "isNewArrival": false,
+  "isBestSeller": false,
+  "isFeatured": false,
+  "isActive": true,
+  "createdAt": "2026-10-18T18:00:00Z"
+ },
+ {
+  "sku": "LUM-W-006",
+  "name": "Wrap Midi Dress",
+  "slug": "wrap-midi-dress",
+  "description": "A midi-length wrap dress with a tie waist and a flowy skirt.",
+  "category": "women",
+  "subcategory": "Dresses",
+  "price": 2299,
+  "originalPrice": 0,
+  "images": [
+   "/images/products/women/wrap-midi-dress.jpg"
+  ],
+  "colours": [
+   "Pink",
+   "Maroon",
+   "Orange"
+  ],
+  "sizes": [
+   "S",
+   "M",
+   "L",
+   "XL",
+   "XXL"
+  ],
+  "rating": 4.6,
+  "numReviews": 89,
+  "stock": 15,
+  "isNewArrival": false,
+  "isBestSeller": false,
+  "isFeatured": true,
+  "isActive": true,
+  "createdAt": "2026-10-18T12:00:00Z"
+ },
+ {
+  "sku": "LUM-W-007",
+  "name": "Oversized Shirt",
+  "slug": "oversized-shirt",
+  "description": "A relaxed, oversized button-up shirt in soft cotton.",
+  "category": "women",
+  "subcategory": "Tops",
+  "price": 1599,
+  "originalPrice": 0,
+  "images": [
+   "/images/products/women/oversized-shirt.jpg"
+  ],
+  "colours": [
+   "Blue",
+   "Green",
+   "White"
+  ],
+  "sizes": [
+   "S",
+   "M",
+   "L",
+   "XL",
+   "XXL"
+  ],
+  "rating": 4.5,
+  "numReviews": 112,
+  "stock": 28,
+  "isNewArrival": false,
+  "isBestSeller": true,
+  "isFeatured": false,
+  "isActive": true,
+  "createdAt": "2026-10-18T06:00:00Z"
+ },
+ {
+  "sku": "LUM-W-008",
+  "name": "Denim A-Line Skirt",
+  "slug": "denim-a-line-skirt",
+  "description": "A mid-length A-line skirt in washed denim with front buttons.",
+  "category": "women",
+  "subcategory": "Skirts",
+  "price": 1299,
+  "originalPrice": 0,
+  "images": [
+   "/images/products/women/denim-a-line-skirt.jpg"
+  ],
+  "colours": [
+   "Blue",
+   "Black",
+   "Grey"
+  ],
+  "sizes": [
+   "S",
+   "M",
+   "L",
+   "XL",
+   "XXL"
+  ],
+  "rating": 4.2,
+  "numReviews": 54,
+  "stock": 20,
+  "isNewArrival": false,
+  "isBestSeller": false,
+  "isFeatured": false,
+  "isActive": true,
+  "createdAt": "2026-10-18T00:00:00Z"
+ },
+ {
+  "sku": "LUM-W-009",
+  "name": "Ruffle Sleeve Dress",
+  "slug": "ruffle-sleeve-dress",
+  "description": "A knee-length dress with ruffled sleeves and a gathered waist.",
+  "category": "women",
+  "subcategory": "Dresses",
+  "price": 2099,
+  "originalPrice": 0,
+  "images": [
+   "/images/products/women/ruffle-sleeve-dress.jpg"
+  ],
+  "colours": [
+   "Maroon",
+   "Pink",
+   "Beige"
+  ],
+  "sizes": [
+   "S",
+   "M",
+   "L",
+   "XL",
+   "XXL"
+  ],
+  "rating": 4.4,
+  "numReviews": 73,
+  "stock": 12,
+  "isNewArrival": true,
+  "isBestSeller": false,
+  "isFeatured": false,
+  "isActive": true,
+  "createdAt": "2026-10-17T18:00:00Z"
+ },
+ {
+  "sku": "LUM-W-010",
+  "name": "Ribbed Knit Top",
+  "slug": "ribbed-knit-top",
+  "description": "A stretchy ribbed knit top with a fitted shape.",
+  "category": "women",
+  "subcategory": "Tops",
+  "price": 999,
+  "originalPrice": 1299,
+  "images": [
+   "/images/products/women/ribbed-knit-top.jpg"
+  ],
+  "colours": [
+   "Maroon",
+   "Pink",
+   "Beige"
+  ],
+  "sizes": [
+   "S",
+   "M",
+   "L",
+   "XL",
+   "XXL"
+  ],
+  "rating": 4.3,
+  "numReviews": 68,
+  "stock": 45,
+  "isNewArrival": false,
+  "isBestSeller": false,
+  "isFeatured": false,
+  "isActive": true,
+  "createdAt": "2026-10-17T12:00:00Z"
+ },
+ {
+  "sku": "LUM-W-011",
+  "name": "Linen Blend Blazer",
+  "slug": "linen-blend-blazer",
+  "description": "A lightweight linen-blend blazer with a single-button front.",
+  "category": "women",
+  "subcategory": "Blazers",
+  "price": 2999,
+  "originalPrice": 0,
+  "images": [
+   "/images/products/women/linen-blend-blazer.jpg"
+  ],
+  "colours": [
+   "Beige",
+   "Green",
+   "Grey"
+  ],
+  "sizes": [
+   "S",
+   "M",
+   "L",
+   "XL",
+   "XXL"
+  ],
+  "rating": 4.7,
+  "numReviews": 96,
+  "stock": 10,
+  "isNewArrival": false,
+  "isBestSeller": false,
+  "isFeatured": true,
+  "isActive": true,
+  "createdAt": "2026-10-17T06:00:00Z"
+ },
+ {
+  "sku": "LUM-W-012",
+  "name": "Wide Leg Jumpsuit",
+  "slug": "wide-leg-jumpsuit",
+  "description": "A one-piece jumpsuit with a V-neck and wide legs.",
+  "category": "women",
+  "subcategory": "Jumpsuits",
+  "price": 2199,
+  "originalPrice": 0,
+  "images": [
+   "/images/products/women/wide-leg-jumpsuit.jpg"
+  ],
+  "colours": [
+   "Green",
+   "Beige",
+   "Grey"
+  ],
+  "sizes": [
+   "S",
+   "M",
+   "L",
+   "XL",
+   "XXL"
+  ],
+  "rating": 4.1,
+  "numReviews": 43,
+  "stock": 0,
+  "isNewArrival": false,
+  "isBestSeller": false,
+  "isFeatured": false,
+  "isActive": true,
+  "createdAt": "2026-10-17T00:00:00Z"
+ },
+ {
+  "sku": "LUM-W-013",
+  "name": "Casual Everyday Kurti",
+  "slug": "casual-everyday-kurti",
+  "description": "A comfortable printed kurti for daily wear.",
+  "category": "women",
+  "subcategory": "Kurtis",
+  "price": 1199,
+  "originalPrice": 1499,
+  "images": [
+   "/images/products/women/casual-everyday-kurti.jpg"
+  ],
+  "colours": [
+   "Yellow",
+   "Blue",
+   "Pink"
+  ],
+  "sizes": [
+   "S",
+   "M",
+   "L",
+   "XL",
+   "XXL"
+  ],
+  "rating": 4.2,
+  "numReviews": 58,
+  "stock": 34,
+  "isNewArrival": false,
+  "isBestSeller": false,
+  "isFeatured": false,
+  "isActive": true,
+  "createdAt": "2026-10-16T18:00:00Z"
+ },
+ {
+  "sku": "LUM-W-014",
+  "name": "Elegant Party Dress",
+  "slug": "elegant-party-dress",
+  "description": "A fitted evening dress with a flared skirt, made for special occasions.",
+  "category": "women",
+  "subcategory": "Dresses",
+  "price": 3499,
+  "originalPrice": 4499,
+  "images": [
+   "/images/products/women/elegant-party-dress.jpg"
+  ],
+  "colours": [
+   "Black",
+   "Maroon",
+   "Blue"
+  ],
+  "sizes": [
+   "S",
+   "M",
+   "L",
+   "XL",
+   "XXL"
+  ],
+  "rating": 4.8,
+  "numReviews": 61,
+  "stock": 9,
+  "isNewArrival": true,
+  "isBestSeller": false,
+  "isFeatured": true,
+  "isActive": true,
+  "createdAt": "2026-10-16T12:00:00Z"
+ },
+ {
+  "sku": "LUM-W-015",
+  "name": "Casual Wide-Leg Trousers",
+  "slug": "casual-wide-leg-trousers",
+  "description": "Relaxed wide-leg trousers with an elastic back waist.",
+  "category": "women",
+  "subcategory": "Trousers",
+  "price": 1699,
+  "originalPrice": 0,
+  "images": [
+   "/images/products/women/casual-wide-leg-trousers.jpg"
+  ],
+  "colours": [
+   "Black",
+   "Beige",
+   "Grey"
+  ],
+  "sizes": [
+   "S",
+   "M",
+   "L",
+   "XL",
+   "XXL"
+  ],
+  "rating": 4.4,
+  "numReviews": 47,
+  "stock": 26,
+  "isNewArrival": true,
+  "isBestSeller": false,
+  "isFeatured": false,
+  "isActive": true,
+  "createdAt": "2026-10-16T06:00:00Z"
+ },
+ {
+  "sku": "LUM-M-001",
+  "name": "Classic Crew-Neck T-Shirt",
+  "slug": "classic-crew-neck-t-shirt",
+  "description": "A soft cotton crew-neck t-shirt for everyday wear.",
+  "category": "men",
+  "subcategory": "T-Shirts",
+  "price": 699,
+  "originalPrice": 999,
+  "images": [
+   "/images/products/men/classic-crew-neck-t-shirt.jpg"
+  ],
+  "colours": [
+   "Black",
+   "White",
+   "Grey"
+  ],
+  "sizes": [
+   "S",
+   "M",
+   "L",
+   "XL",
+   "XXL"
+  ],
+  "rating": 4.4,
+  "numReviews": 210,
+  "stock": 60,
+  "isNewArrival": false,
+  "isBestSeller": true,
+  "isFeatured": false,
+  "isActive": true,
+  "createdAt": "2026-10-16T00:00:00Z"
+ },
+ {
+  "sku": "LUM-M-002",
+  "name": "Pique Polo T-Shirt",
+  "slug": "pique-polo-t-shirt",
+  "description": "A pique cotton polo with a ribbed collar and two-button placket.",
+  "category": "men",
+  "subcategory": "T-Shirts",
+  "price": 999,
+  "originalPrice": 0,
+  "images": [
+   "/images/products/men/pique-polo-t-shirt.jpg"
+  ],
+  "colours": [
+   "Navy",
+   "White",
+   "Green"
+  ],
+  "sizes": [
+   "S",
+   "M",
+   "L",
+   "XL",
+   "XXL"
+  ],
+  "rating": 4.5,
+  "numReviews": 134,
+  "stock": 40,
+  "isNewArrival": true,
+  "isBestSeller": false,
+  "isFeatured": false,
+  "isActive": true,
+  "createdAt": "2026-10-15T18:00:00Z"
+ },
+ {
+  "sku": "LUM-M-003",
+  "name": "Formal Cotton Shirt",
+  "slug": "formal-cotton-shirt",
+  "description": "A full-sleeve formal shirt in crease-resistant cotton blend.",
+  "category": "men",
+  "subcategory": "Shirts",
+  "price": 1499,
+  "originalPrice": 0,
+  "images": [
+   "/images/products/men/formal-cotton-shirt.jpg"
+  ],
+  "colours": [
+   "White",
+   "Blue",
+   "Grey"
+  ],
+  "sizes": [
+   "S",
+   "M",
+   "L",
+   "XL",
+   "XXL"
+  ],
+  "rating": 4.4,
+  "numReviews": 88,
+  "stock": 32,
+  "isNewArrival": false,
+  "isBestSeller": false,
+  "isFeatured": false,
+  "isActive": true,
+  "createdAt": "2026-10-15T12:00:00Z"
+ },
+ {
+  "sku": "LUM-M-004",
+  "name": "Casual Checked Shirt",
+  "slug": "casual-checked-shirt",
+  "description": "A relaxed-fit checked shirt with a chest pocket.",
+  "category": "men",
+  "subcategory": "Shirts",
+  "price": 1299,
+  "originalPrice": 1799,
+  "images": [
+   "/images/products/men/casual-checked-shirt.jpg"
+  ],
+  "colours": [
+   "Blue",
+   "Green",
+   "Maroon"
+  ],
+  "sizes": [
+   "S",
+   "M",
+   "L",
+   "XL",
+   "XXL"
+  ],
+  "rating": 4.3,
+  "numReviews": 101,
+  "stock": 27,
+  "isNewArrival": true,
+  "isBestSeller": false,
+  "isFeatured": false,
+  "isActive": true,
+  "createdAt": "2026-10-15T06:00:00Z"
+ },
+ {
+  "sku": "LUM-M-005",
+  "name": "Slim-Fit Jeans",
+  "slug": "slim-fit-jeans",
+  "description": "Slim-fit stretch jeans with a mid-rise waist.",
+  "category": "men",
+  "subcategory": "Jeans",
+  "price": 1899,
+  "originalPrice": 0,
+  "images": [
+   "/images/products/men/slim-fit-jeans.jpg"
+  ],
+  "colours": [
+   "Blue",
+   "Black",
+   "Grey"
+  ],
+  "sizes": [
+   "30",
+   "32",
+   "34",
+   "36",
+   "38"
+  ],
+  "rating": 4.6,
+  "numReviews": 167,
+  "stock": 38,
+  "isNewArrival": false,
+  "isBestSeller": true,
+  "isFeatured": false,
+  "isActive": true,
+  "createdAt": "2026-10-15T00:00:00Z"
+ },
+ {
+  "sku": "LUM-M-006",
+  "name": "Cotton Chinos",
+  "slug": "cotton-chinos",
+  "description": "Tapered chinos in stretch cotton twill.",
+  "category": "men",
+  "subcategory": "Trousers",
+  "price": 1599,
+  "originalPrice": 0,
+  "images": [
+   "/images/products/men/cotton-chinos.jpg"
+  ],
+  "colours": [
+   "Beige",
+   "Navy",
+   "Olive"
+  ],
+  "sizes": [
+   "30",
+   "32",
+   "34",
+   "36",
+   "38"
+  ],
+  "rating": 4.5,
+  "numReviews": 92,
+  "stock": 30,
+  "isNewArrival": false,
+  "isBestSeller": false,
+  "isFeatured": false,
+  "isActive": true,
+  "createdAt": "2026-10-14T18:00:00Z"
+ },
+ {
+  "sku": "LUM-M-007",
+  "name": "Casual Trousers",
+  "slug": "casual-trousers",
+  "description": "Straight-fit casual trousers with side pockets.",
+  "category": "men",
+  "subcategory": "Trousers",
+  "price": 1399,
+  "originalPrice": 0,
+  "images": [
+   "/images/products/men/casual-trousers.jpg"
+  ],
+  "colours": [
+   "Grey",
+   "Black",
+   "Beige"
+  ],
+  "sizes": [
+   "30",
+   "32",
+   "34",
+   "36",
+   "38"
+  ],
+  "rating": 4.2,
+  "numReviews": 57,
+  "stock": 24,
+  "isNewArrival": false,
+  "isBestSeller": false,
+  "isFeatured": false,
+  "isActive": true,
+  "createdAt": "2026-10-14T12:00:00Z"
+ },
+ {
+  "sku": "LUM-M-008",
+  "name": "Pullover Hoodie",
+  "slug": "pullover-hoodie",
+  "description": "A fleece-lined pullover hoodie with a kangaroo pocket.",
+  "category": "men",
+  "subcategory": "Hoodies & Sweatshirts",
+  "price": 1799,
+  "originalPrice": 2299,
+  "images": [
+   "/images/products/men/pullover-hoodie.jpg"
+  ],
+  "colours": [
+   "Grey",
+   "Black",
+   "Navy"
+  ],
+  "sizes": [
+   "S",
+   "M",
+   "L",
+   "XL",
+   "XXL"
+  ],
+  "rating": 4.6,
+  "numReviews": 143,
+  "stock": 35,
+  "isNewArrival": false,
+  "isBestSeller": true,
+  "isFeatured": true,
+  "isActive": true,
+  "createdAt": "2026-10-14T06:00:00Z"
+ },
+ {
+  "sku": "LUM-M-009",
+  "name": "Crewneck Sweatshirt",
+  "slug": "crewneck-sweatshirt",
+  "description": "A midweight crewneck sweatshirt with ribbed cuffs.",
+  "category": "men",
+  "subcategory": "Hoodies & Sweatshirts",
+  "price": 1499,
+  "originalPrice": 0,
+  "images": [
+   "/images/products/men/crewneck-sweatshirt.jpg"
+  ],
+  "colours": [
+   "Grey",
+   "Maroon",
+   "Green"
+  ],
+  "sizes": [
+   "S",
+   "M",
+   "L",
+   "XL",
+   "XXL"
+  ],
+  "rating": 4.4,
+  "numReviews": 76,
+  "stock": 29,
+  "isNewArrival": true,
+  "isBestSeller": false,
+  "isFeatured": false,
+  "isActive": true,
+  "createdAt": "2026-10-14T00:00:00Z"
+ },
+ {
+  "sku": "LUM-M-010",
+  "name": "Zip-Up Jacket",
+  "slug": "zip-up-jacket",
+  "description": "A lightweight zip-up jacket with two side pockets.",
+  "category": "men",
+  "subcategory": "Jackets",
+  "price": 2999,
+  "originalPrice": 3999,
+  "images": [
+   "/images/products/men/zip-up-jacket.jpg"
+  ],
+  "colours": [
+   "Black",
+   "Olive",
+   "Navy"
+  ],
+  "sizes": [
+   "S",
+   "M",
+   "L",
+   "XL",
+   "XXL"
+  ],
+  "rating": 4.5,
+  "numReviews": 64,
+  "stock": 14,
+  "isNewArrival": false,
+  "isBestSeller": false,
+  "isFeatured": false,
+  "isActive": true,
+  "createdAt": "2026-10-13T18:00:00Z"
+ },
+ {
+  "sku": "LUM-M-011",
+  "name": "Cotton Kurta",
+  "slug": "cotton-kurta",
+  "description": "A straight-cut cotton kurta with a mandarin collar.",
+  "category": "men",
+  "subcategory": "Ethnic Wear",
+  "price": 1599,
+  "originalPrice": 0,
+  "images": [
+   "/images/products/men/cotton-kurta.jpg"
+  ],
+  "colours": [
+   "White",
+   "Blue",
+   "Beige"
+  ],
+  "sizes": [
+   "S",
+   "M",
+   "L",
+   "XL",
+   "XXL"
+  ],
+  "rating": 4.3,
+  "numReviews": 71,
+  "stock": 22,
+  "isNewArrival": false,
+  "isBestSeller": false,
+  "isFeatured": false,
+  "isActive": true,
+  "createdAt": "2026-10-13T12:00:00Z"
+ },
+ {
+  "sku": "LUM-M-012",
+  "name": "Formal Blazer",
+  "slug": "formal-blazer",
+  "description": "A single-breasted formal blazer with a notch lapel.",
+  "category": "men",
+  "subcategory": "Blazers",
+  "price": 3999,
+  "originalPrice": 5499,
+  "images": [
+   "/images/products/men/formal-blazer.jpg"
+  ],
+  "colours": [
+   "Navy",
+   "Black",
+   "Grey"
+  ],
+  "sizes": [
+   "S",
+   "M",
+   "L",
+   "XL",
+   "XXL"
+  ],
+  "rating": 4.7,
+  "numReviews": 52,
+  "stock": 8,
+  "isNewArrival": false,
+  "isBestSeller": false,
+  "isFeatured": true,
+  "isActive": true,
+  "createdAt": "2026-10-13T06:00:00Z"
+ },
+ {
+  "sku": "LUM-B-001",
+  "name": "Gentle Foaming Face Wash",
+  "slug": "gentle-foaming-face-wash",
+  "description": "A daily foaming face wash. Suitable for regular use; do a patch test first.",
+  "category": "beauty",
+  "subcategory": "Skincare",
+  "price": 349,
+  "originalPrice": 0,
+  "images": [
+   "/images/products/beauty/gentle-foaming-face-wash.jpg"
+  ],
+  "colours": [],
+  "sizes": [],
+  "rating": 4.3,
+  "numReviews": 189,
+  "stock": 80,
+  "isNewArrival": false,
+  "isBestSeller": true,
+  "isFeatured": false,
+  "isActive": true,
+  "createdAt": "2026-10-13T00:00:00Z"
+ },
+ {
+  "sku": "LUM-B-002",
+  "name": "Vitamin C Face Serum",
+  "slug": "vitamin-c-face-serum",
+  "description": "A lightweight serum with vitamin C for daily use. Do a patch test before first use.",
+  "category": "beauty",
+  "subcategory": "Skincare",
+  "price": 699,
+  "originalPrice": 899,
+  "images": [
+   "/images/products/beauty/vitamin-c-face-serum.jpg"
+  ],
+  "colours": [],
+  "sizes": [],
+  "rating": 4.4,
+  "numReviews": 142,
+  "stock": 45,
+  "isNewArrival": true,
+  "isBestSeller": false,
+  "isFeatured": false,
+  "isActive": true,
+  "createdAt": "2026-10-12T18:00:00Z"
+ },
+ {
+  "sku": "LUM-B-003",
+  "name": "Daily Hydrating Moisturizer",
+  "slug": "daily-hydrating-moisturizer",
+  "description": "A light moisturizer that leaves skin feeling soft.",
+  "category": "beauty",
+  "subcategory": "Skincare",
+  "price": 499,
+  "originalPrice": 0,
+  "images": [
+   "/images/products/beauty/daily-hydrating-moisturizer.jpg"
+  ],
+  "colours": [],
+  "sizes": [],
+  "rating": 4.5,
+  "numReviews": 176,
+  "stock": 60,
+  "isNewArrival": false,
+  "isBestSeller": true,
+  "isFeatured": false,
+  "isActive": true,
+  "createdAt": "2026-10-12T12:00:00Z"
+ },
+ {
+  "sku": "LUM-B-004",
+  "name": "Daily Sunscreen Lotion",
+  "slug": "daily-sunscreen-lotion",
+  "description": "A light sunscreen lotion for daily use. Check the pack for the SPF rating and directions.",
+  "category": "beauty",
+  "subcategory": "Skincare",
+  "price": 549,
+  "originalPrice": 0,
+  "images": [
+   "/images/products/beauty/daily-sunscreen-lotion.jpg"
+  ],
+  "colours": [],
+  "sizes": [],
+  "rating": 4.2,
+  "numReviews": 118,
+  "stock": 50,
+  "isNewArrival": false,
+  "isBestSeller": false,
+  "isFeatured": false,
+  "isActive": true,
+  "createdAt": "2026-10-12T06:00:00Z"
+ },
+ {
+  "sku": "LUM-B-005",
+  "name": "Hydrating Face Toner",
+  "slug": "hydrating-face-toner",
+  "description": "An alcohol-free toner to use after cleansing.",
+  "category": "beauty",
+  "subcategory": "Skincare",
+  "price": 399,
+  "originalPrice": 0,
+  "images": [
+   "/images/products/beauty/hydrating-face-toner.jpg"
+  ],
+  "colours": [],
+  "sizes": [],
+  "rating": 4.1,
+  "numReviews": 64,
+  "stock": 42,
+  "isNewArrival": false,
+  "isBestSeller": false,
+  "isFeatured": false,
+  "isActive": true,
+  "createdAt": "2026-10-12T00:00:00Z"
+ },
+ {
+  "sku": "LUM-B-006",
+  "name": "Soft Gel Cleanser",
+  "slug": "soft-gel-cleanser",
+  "description": "A soft gel cleanser for daily face cleansing.",
+  "category": "beauty",
+  "subcategory": "Skincare",
+  "price": 449,
+  "originalPrice": 0,
+  "images": [
+   "/images/products/beauty/soft-gel-cleanser.jpg"
+  ],
+  "colours": [],
+  "sizes": [],
+  "rating": 4.3,
+  "numReviews": 83,
+  "stock": 38,
+  "isNewArrival": false,
+  "isBestSeller": false,
+  "isFeatured": false,
+  "isActive": true,
+  "createdAt": "2026-10-11T18:00:00Z"
+ },
+ {
+  "sku": "LUM-B-007",
+  "name": "Nourishing Lip Balm",
+  "slug": "nourishing-lip-balm",
+  "description": "A moisturizing lip balm in a pocket-size stick.",
+  "category": "beauty",
+  "subcategory": "Lip Care",
+  "price": 199,
+  "originalPrice": 0,
+  "images": [
+   "/images/products/beauty/nourishing-lip-balm.jpg"
+  ],
+  "colours": [],
+  "sizes": [],
+  "rating": 4.5,
+  "numReviews": 230,
+  "stock": 120,
+  "isNewArrival": true,
+  "isBestSeller": true,
+  "isFeatured": false,
+  "isActive": true,
+  "createdAt": "2026-10-11T12:00:00Z"
+ },
+ {
+  "sku": "LUM-B-008",
+  "name": "Matte Lipstick",
+  "slug": "matte-lipstick",
+  "description": "A long-wearing matte lipstick in three shades.",
+  "category": "beauty",
+  "subcategory": "Makeup",
+  "price": 599,
+  "originalPrice": 799,
+  "images": [
+   "/images/products/beauty/matte-lipstick.jpg"
+  ],
+  "colours": [
+   "Pink",
+   "Maroon",
+   "Red"
+  ],
+  "sizes": [],
+  "rating": 4.4,
+  "numReviews": 157,
+  "stock": 55,
+  "isNewArrival": false,
+  "isBestSeller": false,
+  "isFeatured": true,
+  "isActive": true,
+  "createdAt": "2026-10-11T06:00:00Z"
+ },
+ {
+  "sku": "LUM-B-009",
+  "name": "Clay Face Mask",
+  "slug": "clay-face-mask",
+  "description": "A clay face mask for weekly use. Avoid the eye area.",
+  "category": "beauty",
+  "subcategory": "Skincare",
+  "price": 449,
+  "originalPrice": 0,
+  "images": [
+   "/images/products/beauty/clay-face-mask.jpg"
+  ],
+  "colours": [],
+  "sizes": [],
+  "rating": 4.0,
+  "numReviews": 59,
+  "stock": 30,
+  "isNewArrival": false,
+  "isBestSeller": false,
+  "isFeatured": false,
+  "isActive": true,
+  "createdAt": "2026-10-11T00:00:00Z"
+ },
+ {
+  "sku": "LUM-B-010",
+  "name": "Rich Night Cream",
+  "slug": "rich-night-cream",
+  "description": "A rich cream for nighttime use that leaves skin feeling moisturized.",
+  "category": "beauty",
+  "subcategory": "Skincare",
+  "price": 799,
+  "originalPrice": 999,
+  "images": [
+   "/images/products/beauty/rich-night-cream.jpg"
+  ],
+  "colours": [],
+  "sizes": [],
+  "rating": 4.3,
+  "numReviews": 72,
+  "stock": 26,
+  "isNewArrival": false,
+  "isBestSeller": false,
+  "isFeatured": false,
+  "isActive": true,
+  "createdAt": "2026-10-10T18:00:00Z"
+ },
+ {
+  "sku": "LUM-B-011",
+  "name": "Shea Body Lotion",
+  "slug": "shea-body-lotion",
+  "description": "A creamy body lotion with shea butter.",
+  "category": "beauty",
+  "subcategory": "Body Care",
+  "price": 449,
+  "originalPrice": 0,
+  "images": [
+   "/images/products/beauty/shea-body-lotion.jpg"
+  ],
+  "colours": [],
+  "sizes": [],
+  "rating": 4.4,
+  "numReviews": 98,
+  "stock": 48,
+  "isNewArrival": false,
+  "isBestSeller": false,
+  "isFeatured": false,
+  "isActive": true,
+  "createdAt": "2026-10-10T12:00:00Z"
+ },
+ {
+  "sku": "LUM-B-012",
+  "name": "Everyday Shampoo",
+  "slug": "everyday-shampoo",
+  "description": "A mild shampoo for regular use.",
+  "category": "beauty",
+  "subcategory": "Hair Care",
+  "price": 399,
+  "originalPrice": 0,
+  "images": [
+   "/images/products/beauty/everyday-shampoo.jpg"
+  ],
+  "colours": [],
+  "sizes": [],
+  "rating": 4.2,
+  "numReviews": 110,
+  "stock": 70,
+  "isNewArrival": false,
+  "isBestSeller": false,
+  "isFeatured": false,
+  "isActive": true,
+  "createdAt": "2026-10-10T06:00:00Z"
+ },
+ {
+  "sku": "LUM-B-013",
+  "name": "Everyday Conditioner",
+  "slug": "everyday-conditioner",
+  "description": "A conditioner that leaves hair feeling smooth and easy to comb.",
+  "category": "beauty",
+  "subcategory": "Hair Care",
+  "price": 399,
+  "originalPrice": 0,
+  "images": [
+   "/images/products/beauty/everyday-conditioner.jpg"
+  ],
+  "colours": [],
+  "sizes": [],
+  "rating": 4.2,
+  "numReviews": 95,
+  "stock": 66,
+  "isNewArrival": true,
+  "isBestSeller": false,
+  "isFeatured": false,
+  "isActive": true,
+  "createdAt": "2026-10-10T00:00:00Z"
+ },
+ {
+  "sku": "LUM-B-014",
+  "name": "Eyeshadow Makeup Palette",
+  "slug": "eyeshadow-makeup-palette",
+  "description": "A palette of twelve blendable eyeshadow shades.",
+  "category": "beauty",
+  "subcategory": "Makeup",
+  "price": 1299,
+  "originalPrice": 1799,
+  "images": [
+   "/images/products/beauty/eyeshadow-makeup-palette.jpg"
+  ],
+  "colours": [
+   "Pink",
+   "Beige",
+   "Maroon"
+  ],
+  "sizes": [],
+  "rating": 4.6,
+  "numReviews": 86,
+  "stock": 18,
+  "isNewArrival": true,
+  "isBestSeller": false,
+  "isFeatured": true,
+  "isActive": true,
+  "createdAt": "2026-10-09T18:00:00Z"
+ },
+ {
+  "sku": "LUM-A-001",
+  "name": "Pearl Drop Earrings",
+  "slug": "pearl-drop-earrings",
+  "description": "Lightweight drop earrings with faux pearls.",
+  "category": "accessories",
+  "subcategory": "Earrings",
+  "price": 799,
+  "originalPrice": 0,
+  "images": [
+   "/images/products/accessories/pearl-drop-earrings.jpg"
+  ],
+  "colours": [
+   "Gold",
+   "Silver"
+  ],
+  "sizes": [],
+  "rating": 4.5,
+  "numReviews": 88,
+  "stock": 40,
+  "isNewArrival": true,
+  "isBestSeller": false,
+  "isFeatured": false,
+  "isActive": true,
+  "createdAt": "2026-10-09T12:00:00Z"
+ },
+ {
+  "sku": "LUM-A-002",
+  "name": "Gold-Tone Hoop Earrings",
+  "slug": "gold-tone-hoop-earrings",
+  "description": "Classic round hoops with a polished gold-tone finish.",
+  "category": "accessories",
+  "subcategory": "Earrings",
+  "price": 1099,
+  "originalPrice": 0,
+  "images": [
+   "/images/products/accessories/gold-tone-hoop-earrings.jpg"
+  ],
+  "colours": [
+   "Gold",
+   "Silver"
+  ],
+  "sizes": [],
+  "rating": 4.8,
+  "numReviews": 112,
+  "stock": 36,
+  "isNewArrival": true,
+  "isBestSeller": true,
+  "isFeatured": false,
+  "isActive": true,
+  "createdAt": "2026-10-09T06:00:00Z"
+ },
+ {
+  "sku": "LUM-A-003",
+  "name": "Layered Chain Necklace",
+  "slug": "layered-chain-necklace",
+  "description": "A two-layer chain necklace in a lightweight alloy.",
+  "category": "accessories",
+  "subcategory": "Necklaces",
+  "price": 1299,
+  "originalPrice": 1699,
+  "images": [
+   "/images/products/accessories/layered-chain-necklace.jpg"
+  ],
+  "colours": [
+   "Gold",
+   "Silver"
+  ],
+  "sizes": [],
+  "rating": 4.4,
+  "numReviews": 67,
+  "stock": 25,
+  "isNewArrival": false,
+  "isBestSeller": false,
+  "isFeatured": false,
+  "isActive": true,
+  "createdAt": "2026-10-09T00:00:00Z"
+ },
+ {
+  "sku": "LUM-A-004",
+  "name": "Heart Pendant Necklace",
+  "slug": "heart-pendant-necklace",
+  "description": "A fine chain with a small heart pendant.",
+  "category": "accessories",
+  "subcategory": "Necklaces",
+  "price": 999,
+  "originalPrice": 0,
+  "images": [
+   "/images/products/accessories/heart-pendant-necklace.jpg"
+  ],
+  "colours": [
+   "Gold",
+   "Rose Gold"
+  ],
+  "sizes": [],
+  "rating": 4.3,
+  "numReviews": 54,
+  "stock": 30,
+  "isNewArrival": false,
+  "isBestSeller": false,
+  "isFeatured": false,
+  "isActive": true,
+  "createdAt": "2026-10-08T18:00:00Z"
+ },
+ {
+  "sku": "LUM-A-005",
+  "name": "Charm Bracelet",
+  "slug": "charm-bracelet",
+  "description": "An adjustable chain bracelet with small charms.",
+  "category": "accessories",
+  "subcategory": "Bracelets",
+  "price": 899,
+  "originalPrice": 0,
+  "images": [
+   "/images/products/accessories/charm-bracelet.jpg"
+  ],
+  "colours": [
+   "Gold",
+   "Silver"
+  ],
+  "sizes": [],
+  "rating": 4.2,
+  "numReviews": 41,
+  "stock": 28,
+  "isNewArrival": false,
+  "isBestSeller": false,
+  "isFeatured": false,
+  "isActive": true,
+  "createdAt": "2026-10-08T12:00:00Z"
+ },
+ {
+  "sku": "LUM-A-006",
+  "name": "Glass Bangle Set",
+  "slug": "glass-bangle-set",
+  "description": "A set of 12 coloured glass bangles.",
+  "category": "accessories",
+  "subcategory": "Bangles",
+  "price": 599,
+  "originalPrice": 0,
+  "images": [
+   "/images/products/accessories/glass-bangle-set.jpg"
+  ],
+  "colours": [
+   "Maroon",
+   "Green",
+   "Pink"
+  ],
+  "sizes": [],
+  "rating": 4.4,
+  "numReviews": 93,
+  "stock": 50,
+  "isNewArrival": false,
+  "isBestSeller": false,
+  "isFeatured": false,
+  "isActive": true,
+  "createdAt": "2026-10-08T06:00:00Z"
+ },
+ {
+  "sku": "LUM-A-007",
+  "name": "Minimal Analog Wristwatch",
+  "slug": "minimal-analog-wristwatch",
+  "description": "An analog watch with a round dial and a strap that adjusts to fit.",
+  "category": "accessories",
+  "subcategory": "Watches",
+  "price": 2499,
+  "originalPrice": 3299,
+  "images": [
+   "/images/products/accessories/minimal-analog-wristwatch.jpg"
+  ],
+  "colours": [
+   "Black",
+   "Brown",
+   "Silver"
+  ],
+  "sizes": [],
+  "rating": 4.5,
+  "numReviews": 76,
+  "stock": 15,
+  "isNewArrival": false,
+  "isBestSeller": false,
+  "isFeatured": true,
+  "isActive": true,
+  "createdAt": "2026-10-08T00:00:00Z"
+ },
+ {
+  "sku": "LUM-A-008",
+  "name": "Stackable Ring",
+  "slug": "stackable-ring",
+  "description": "A slim stackable ring in a plated alloy.",
+  "category": "accessories",
+  "subcategory": "Rings",
+  "price": 499,
+  "originalPrice": 0,
+  "images": [
+   "/images/products/accessories/stackable-ring.jpg"
+  ],
+  "colours": [
+   "Gold",
+   "Silver"
+  ],
+  "sizes": [
+   "6",
+   "7",
+   "8"
+  ],
+  "rating": 4.1,
+  "numReviews": 35,
+  "stock": 32,
+  "isNewArrival": false,
+  "isBestSeller": false,
+  "isFeatured": false,
+  "isActive": true,
+  "createdAt": "2026-10-07T18:00:00Z"
+ },
+ {
+  "sku": "LUM-A-009",
+  "name": "Aviator Sunglasses",
+  "slug": "aviator-sunglasses",
+  "description": "Metal-frame aviator sunglasses with UV-protective lenses.",
+  "category": "accessories",
+  "subcategory": "Sunglasses",
+  "price": 1199,
+  "originalPrice": 1599,
+  "images": [
+   "/images/products/accessories/aviator-sunglasses.jpg"
+  ],
+  "colours": [
+   "Gold",
+   "Black"
+  ],
+  "sizes": [],
+  "rating": 4.3,
+  "numReviews": 102,
+  "stock": 28,
+  "isNewArrival": false,
+  "isBestSeller": true,
+  "isFeatured": false,
+  "isActive": true,
+  "createdAt": "2026-10-07T12:00:00Z"
+ },
+ {
+  "sku": "LUM-A-010",
+  "name": "Structured Handbag",
+  "slug": "structured-handbag",
+  "description": "A structured handbag with a top handle and a detachable strap.",
+  "category": "accessories",
+  "subcategory": "Bags",
+  "price": 2999,
+  "originalPrice": 0,
+  "images": [
+   "/images/products/accessories/structured-handbag.jpg"
+  ],
+  "colours": [
+   "Navy",
+   "Black",
+   "Tan"
+  ],
+  "sizes": [],
+  "rating": 4.7,
+  "numReviews": 64,
+  "stock": 12,
+  "isNewArrival": true,
+  "isBestSeller": false,
+  "isFeatured": true,
+  "isActive": true,
+  "createdAt": "2026-10-07T06:00:00Z"
+ },
+ {
+  "sku": "LUM-A-011",
+  "name": "Crossbody Sling Bag",
+  "slug": "crossbody-sling-bag",
+  "description": "A compact sling bag with an adjustable strap.",
+  "category": "accessories",
+  "subcategory": "Bags",
+  "price": 1499,
+  "originalPrice": 0,
+  "images": [
+   "/images/products/accessories/crossbody-sling-bag.jpg"
+  ],
+  "colours": [
+   "Black",
+   "Tan",
+   "Pink"
+  ],
+  "sizes": [],
+  "rating": 4.4,
+  "numReviews": 81,
+  "stock": 22,
+  "isNewArrival": false,
+  "isBestSeller": true,
+  "isFeatured": false,
+  "isActive": true,
+  "createdAt": "2026-10-07T00:00:00Z"
+ },
+ {
+  "sku": "LUM-A-012",
+  "name": "Slim Leather Wallet",
+  "slug": "slim-leather-wallet",
+  "description": "A slim faux-leather wallet with card slots.",
+  "category": "accessories",
+  "subcategory": "Wallets",
+  "price": 899,
+  "originalPrice": 1199,
+  "images": [
+   "/images/products/accessories/slim-leather-wallet.jpg"
+  ],
+  "colours": [
+   "Black",
+   "Tan",
+   "Brown"
+  ],
+  "sizes": [],
+  "rating": 4.5,
+  "numReviews": 119,
+  "stock": 44,
+  "isNewArrival": false,
+  "isBestSeller": false,
+  "isFeatured": false,
+  "isActive": true,
+  "createdAt": "2026-10-06T18:00:00Z"
+ },
+ {
+  "sku": "LUM-A-013",
+  "name": "Pearl Hair Clip",
+  "slug": "pearl-hair-clip",
+  "description": "A hair clip decorated with faux pearls.",
+  "category": "accessories",
+  "subcategory": "Hair Accessories",
+  "price": 299,
+  "originalPrice": 0,
+  "images": [
+   "/images/products/accessories/pearl-hair-clip.jpg"
+  ],
+  "colours": [
+   "White",
+   "Gold"
+  ],
+  "sizes": [],
+  "rating": 4.2,
+  "numReviews": 48,
+  "stock": 70,
+  "isNewArrival": false,
+  "isBestSeller": false,
+  "isFeatured": false,
+  "isActive": true,
+  "createdAt": "2026-10-06T12:00:00Z"
+ },
+ {
+  "sku": "LUM-A-014",
+  "name": "Satin Hair Band",
+  "slug": "satin-hair-band",
+  "description": "A padded satin hair band.",
+  "category": "accessories",
+  "subcategory": "Hair Accessories",
+  "price": 249,
+  "originalPrice": 0,
+  "images": [
+   "/images/products/accessories/satin-hair-band.jpg"
+  ],
+  "colours": [
+   "Pink",
+   "Black",
+   "Maroon"
+  ],
+  "sizes": [],
+  "rating": 4.3,
+  "numReviews": 57,
+  "stock": 65,
+  "isNewArrival": false,
+  "isBestSeller": false,
+  "isFeatured": false,
+  "isActive": true,
+  "createdAt": "2026-10-06T06:00:00Z"
+ },
+ {
+  "sku": "LUM-A-015",
+  "name": "Printed Scarf",
+  "slug": "printed-scarf",
+  "description": "A lightweight printed scarf.",
+  "category": "accessories",
+  "subcategory": "Scarves",
+  "price": 699,
+  "originalPrice": 0,
+  "images": [
+   "/images/products/accessories/printed-scarf.jpg"
+  ],
+  "colours": [
+   "Pink",
+   "Blue",
+   "Beige"
+  ],
+  "sizes": [],
+  "rating": 4.2,
+  "numReviews": 39,
+  "stock": 34,
+  "isNewArrival": false,
+  "isBestSeller": false,
+  "isFeatured": false,
+  "isActive": true,
+  "createdAt": "2026-10-06T00:00:00Z"
+ },
+ {
+  "sku": "LUM-A-016",
+  "name": "Classic Leather Belt",
+  "slug": "classic-leather-belt",
+  "description": "A belt with a metal buckle in faux leather.",
+  "category": "accessories",
+  "subcategory": "Belts",
+  "price": 799,
+  "originalPrice": 0,
+  "images": [
+   "/images/products/accessories/classic-leather-belt.jpg"
+  ],
+  "colours": [
+   "Black",
+   "Brown"
+  ],
+  "sizes": [
+   "S",
+   "M",
+   "L"
+  ],
+  "rating": 4.3,
+  "numReviews": 62,
+  "stock": 30,
+  "isNewArrival": false,
+  "isBestSeller": false,
+  "isFeatured": false,
+  "isActive": true,
+  "createdAt": "2026-10-05T18:00:00Z"
+ },
+ {
+  "sku": "LUM-A-017",
+  "name": "Canvas Tote Bag",
+  "slug": "canvas-tote-bag",
+  "description": "A roomy canvas tote with an inside zip pocket.",
+  "category": "accessories",
+  "subcategory": "Bags",
+  "price": 899,
+  "originalPrice": 0,
+  "images": [
+   "/images/products/accessories/canvas-tote-bag.jpg"
+  ],
+  "colours": [
+   "Beige",
+   "Navy",
+   "Green"
+  ],
+  "sizes": [],
+  "rating": 4.4,
+  "numReviews": 95,
+  "stock": 40,
+  "isNewArrival": true,
+  "isBestSeller": false,
+  "isFeatured": false,
+  "isActive": true,
+  "createdAt": "2026-10-05T12:00:00Z"
+ },
+ {
+  "sku": "LUM-A-018",
+  "name": "Traditional Jewellery Set",
+  "slug": "traditional-jewellery-set",
+  "description": "A necklace and earring set in a traditional design.",
+  "category": "accessories",
+  "subcategory": "Jewellery Sets",
+  "price": 1999,
+  "originalPrice": 2699,
+  "images": [
+   "/images/products/accessories/traditional-jewellery-set.jpg"
+  ],
+  "colours": [
+   "Gold",
+   "Silver"
+  ],
+  "sizes": [],
+  "rating": 4.6,
+  "numReviews": 58,
+  "stock": 16,
+  "isNewArrival": false,
+  "isBestSeller": false,
+  "isFeatured": true,
+  "isActive": true,
+  "createdAt": "2026-10-05T06:00:00Z"
+ },
+ {
+  "sku": "LUM-H-001",
+  "name": "Cotton Cushion Cover",
+  "slug": "cotton-cushion-cover",
+  "description": "A 16-inch cotton cushion cover with a hidden zip.",
+  "category": "home-living",
+  "subcategory": "Cushions",
+  "price": 399,
+  "originalPrice": 0,
+  "images": [
+   "/images/products/home-living/cotton-cushion-cover.jpg"
+  ],
+  "colours": [
+   "Beige",
+   "Grey",
+   "Teal"
+  ],
+  "sizes": [],
+  "rating": 4.3,
+  "numReviews": 77,
+  "stock": 60,
+  "isNewArrival": false,
+  "isBestSeller": false,
+  "isFeatured": false,
+  "isActive": true,
+  "createdAt": "2026-10-05T00:00:00Z"
+ },
+ {
+  "sku": "LUM-H-002",
+  "name": "Velvet Decorative Cushion",
+  "slug": "velvet-decorative-cushion",
+  "description": "A filled velvet cushion with a soft finish.",
+  "category": "home-living",
+  "subcategory": "Cushions",
+  "price": 699,
+  "originalPrice": 899,
+  "images": [
+   "/images/products/home-living/velvet-decorative-cushion.jpg"
+  ],
+  "colours": [
+   "Maroon",
+   "Green",
+   "Pink"
+  ],
+  "sizes": [],
+  "rating": 4.5,
+  "numReviews": 64,
+  "stock": 35,
+  "isNewArrival": true,
+  "isBestSeller": false,
+  "isFeatured": false,
+  "isActive": true,
+  "createdAt": "2026-10-04T18:00:00Z"
+ },
+ {
+  "sku": "LUM-H-003",
+  "name": "Cotton Bedsheet Set",
+  "slug": "cotton-bedsheet-set",
+  "description": "A bedsheet set with one flat sheet and two pillow covers.",
+  "category": "home-living",
+  "subcategory": "Bedding",
+  "price": 1499,
+  "originalPrice": 1999,
+  "images": [
+   "/images/products/home-living/cotton-bedsheet-set.jpg"
+  ],
+  "colours": [
+   "White",
+   "Blue",
+   "Pink"
+  ],
+  "sizes": [
+   "Double",
+   "King"
+  ],
+  "rating": 4.4,
+  "numReviews": 120,
+  "stock": 24,
+  "isNewArrival": false,
+  "isBestSeller": true,
+  "isFeatured": false,
+  "isActive": true,
+  "createdAt": "2026-10-04T12:00:00Z"
+ },
+ {
+  "sku": "LUM-H-004",
+  "name": "Soft Fleece Blanket",
+  "slug": "soft-fleece-blanket",
+  "description": "A warm fleece blanket for cooler evenings.",
+  "category": "home-living",
+  "subcategory": "Blankets",
+  "price": 1299,
+  "originalPrice": 0,
+  "images": [
+   "/images/products/home-living/soft-fleece-blanket.jpg"
+  ],
+  "colours": [
+   "Grey",
+   "Beige",
+   "Maroon"
+  ],
+  "sizes": [],
+  "rating": 4.5,
+  "numReviews": 86,
+  "stock": 28,
+  "isNewArrival": false,
+  "isBestSeller": false,
+  "isFeatured": false,
+  "isActive": true,
+  "createdAt": "2026-10-04T06:00:00Z"
+ },
+ {
+  "sku": "LUM-H-005",
+  "name": "Woven Table Runner",
+  "slug": "woven-table-runner",
+  "description": "A hand-woven style table runner for dining tables.",
+  "category": "home-living",
+  "subcategory": "Table Linen",
+  "price": 599,
+  "originalPrice": 0,
+  "images": [
+   "/images/products/home-living/woven-table-runner.jpg"
+  ],
+  "colours": [
+   "Beige",
+   "Green"
+  ],
+  "sizes": [],
+  "rating": 4.2,
+  "numReviews": 41,
+  "stock": 30,
+  "isNewArrival": false,
+  "isBestSeller": false,
+  "isFeatured": false,
+  "isActive": true,
+  "createdAt": "2026-10-04T00:00:00Z"
+ },
+ {
+  "sku": "LUM-H-006",
+  "name": "Ceramic Coffee Mug",
+  "slug": "ceramic-coffee-mug",
+  "description": "A ceramic mug that holds about 300 ml.",
+  "category": "home-living",
+  "subcategory": "Kitchen & Dining",
+  "price": 299,
+  "originalPrice": 0,
+  "images": [
+   "/images/products/home-living/ceramic-coffee-mug.jpg"
+  ],
+  "colours": [
+   "White",
+   "Blue",
+   "Pink"
+  ],
+  "sizes": [],
+  "rating": 4.4,
+  "numReviews": 138,
+  "stock": 90,
+  "isNewArrival": false,
+  "isBestSeller": true,
+  "isFeatured": false,
+  "isActive": true,
+  "createdAt": "2026-10-03T18:00:00Z"
+ },
+ {
+  "sku": "LUM-H-007",
+  "name": "Ceramic Flower Vase",
+  "slug": "ceramic-flower-vase",
+  "description": "A ceramic vase for fresh or dried flowers.",
+  "category": "home-living",
+  "subcategory": "Decor",
+  "price": 899,
+  "originalPrice": 1199,
+  "images": [
+   "/images/products/home-living/ceramic-flower-vase.jpg"
+  ],
+  "colours": [
+   "White",
+   "Beige"
+  ],
+  "sizes": [],
+  "rating": 4.3,
+  "numReviews": 52,
+  "stock": 20,
+  "isNewArrival": false,
+  "isBestSeller": false,
+  "isFeatured": false,
+  "isActive": true,
+  "createdAt": "2026-10-03T12:00:00Z"
+ },
+ {
+  "sku": "LUM-H-008",
+  "name": "Table Lamp",
+  "slug": "table-lamp",
+  "description": "A table lamp with a fabric shade. Bulb sold separately.",
+  "category": "home-living",
+  "subcategory": "Lighting",
+  "price": 1999,
+  "originalPrice": 0,
+  "images": [
+   "/images/products/home-living/table-lamp.jpg"
+  ],
+  "colours": [
+   "Beige",
+   "Black"
+  ],
+  "sizes": [],
+  "rating": 4.5,
+  "numReviews": 47,
+  "stock": 14,
+  "isNewArrival": false,
+  "isBestSeller": false,
+  "isFeatured": true,
+  "isActive": true,
+  "createdAt": "2026-10-03T06:00:00Z"
+ },
+ {
+  "sku": "LUM-H-009",
+  "name": "Boho Wall Decor Hanging",
+  "slug": "boho-wall-decor-hanging",
+  "description": "A woven wall hanging for living rooms and bedrooms.",
+  "category": "home-living",
+  "subcategory": "Decor",
+  "price": 799,
+  "originalPrice": 0,
+  "images": [
+   "/images/products/home-living/boho-wall-decor-hanging.jpg"
+  ],
+  "colours": [
+   "Beige",
+   "Brown"
+  ],
+  "sizes": [],
+  "rating": 4.1,
+  "numReviews": 33,
+  "stock": 26,
+  "isNewArrival": true,
+  "isBestSeller": false,
+  "isFeatured": false,
+  "isActive": true,
+  "createdAt": "2026-10-03T00:00:00Z"
+ },
+ {
+  "sku": "LUM-H-010",
+  "name": "Woven Storage Basket",
+  "slug": "woven-storage-basket",
+  "description": "A woven basket for blankets, toys or laundry.",
+  "category": "home-living",
+  "subcategory": "Storage",
+  "price": 899,
+  "originalPrice": 0,
+  "images": [
+   "/images/products/home-living/woven-storage-basket.jpg"
+  ],
+  "colours": [
+   "Beige",
+   "Brown"
+  ],
+  "sizes": [],
+  "rating": 4.4,
+  "numReviews": 69,
+  "stock": 32,
+  "isNewArrival": false,
+  "isBestSeller": false,
+  "isFeatured": false,
+  "isActive": true,
+  "createdAt": "2026-10-02T18:00:00Z"
+ },
+ {
+  "sku": "LUM-H-011",
+  "name": "Decorative Serving Tray",
+  "slug": "decorative-serving-tray",
+  "description": "A decorative tray with raised edges for serving or display.",
+  "category": "home-living",
+  "subcategory": "Kitchen & Dining",
+  "price": 649,
+  "originalPrice": 0,
+  "images": [
+   "/images/products/home-living/decorative-serving-tray.jpg"
+  ],
+  "colours": [
+   "Gold",
+   "Black"
+  ],
+  "sizes": [],
+  "rating": 4.2,
+  "numReviews": 38,
+  "stock": 25,
+  "isNewArrival": false,
+  "isBestSeller": false,
+  "isFeatured": false,
+  "isActive": true,
+  "createdAt": "2026-10-02T12:00:00Z"
+ },
+ {
+  "sku": "LUM-H-012",
+  "name": "Knitted Throw Blanket",
+  "slug": "knitted-throw-blanket",
+  "description": "A chunky knit throw for sofas and beds.",
+  "category": "home-living",
+  "subcategory": "Blankets",
+  "price": 1699,
+  "originalPrice": 2199,
+  "images": [
+   "/images/products/home-living/knitted-throw-blanket.jpg"
+  ],
+  "colours": [
+   "Grey",
+   "Beige",
+   "Maroon"
+  ],
+  "sizes": [],
+  "rating": 4.6,
+  "numReviews": 73,
+  "stock": 18,
+  "isNewArrival": true,
+  "isBestSeller": false,
+  "isFeatured": true,
+  "isActive": true,
+  "createdAt": "2026-10-02T06:00:00Z"
+ }
+]
