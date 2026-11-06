@@ -1,7 +1,7 @@
-
 import { useParams } from 'react-router-dom';
 import NotFound from './NotFound';
 
+// Store all information pages
 const PAGES = {
   'shipping-delivery': [
     'Shipping & Delivery',
@@ -40,17 +40,27 @@ const PAGES = {
 };
 
 export default function InfoPage() {
+
+  // Get the page slug from the URL
   const { slug } = useParams();
+
+  // Find the matching page details
   const page = PAGES[slug];
 
+  // If the page does not exist, show NotFound
   if (!page) {
     return <NotFound />;
   }
 
   return (
     <div className="container section prose">
+
+      {/* Display page title */}
       <h1 className="page-title">{page[0]}</h1>
+
+      {/* Display page description */}
       <p>{page[1]}</p>
+
     </div>
   );
 }

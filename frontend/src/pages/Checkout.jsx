@@ -1,23 +1,35 @@
-
 import { useEffect, useRef, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+
 import { EmptyState } from '../components/States';
 import { useCart } from '../context/CartContext';
 import { useAuth } from '../context/AuthContext';
 import { useToast } from '../context/ToastContext';
+
 import { createOrder } from '../services/orderService';
 import { formatPrice } from '../utils/formatPrice';
+
 import {
   FREE_SHIPPING_THRESHOLD,
   SHIPPING_FEE,
 } from '../utils/constants';
 
+// Display checkout page
 export default function Checkout() {
+
+  // Get cart details and functions
   const { items, subtotal, clear, refresh } = useCart();
+
+  // Get logged-in user details
   const { user } = useAuth();
+
+  // Get popup message function
   const { push } = useToast();
+
+  // Navigate to another page
   const navigate = useNavigate();
 
+  // Store shipping form details
   const [form, setForm] = useState({
     fullName: user?.name || '',
     email: user?.email || '',
@@ -28,18 +40,28 @@ export default function Checkout() {
     postalCode: '',
   });
 
+  // Store validation errors
   const [errors, setErrors] = useState({});
+
+  // Store server error message
   const [serverError, setServerError] = useState('');
+
+  // Track order submission status
   const [busy, setBusy] = useState(false);
 
+  // Create unique key to prevent duplicate orders
   const idemKey = useRef(crypto.randomUUID());
 
+  // Refresh product price and stock when checkout opens
   useEffect(() => {
     refresh()
-      .then((messages) => messages.forEach((m) => push(m, 'info')))
+      .then((messages) => {
+        messages.forEach((m) => push(m, 'info'));
+      })
       .catch(() => {});
   }, []);
 
+  // Show message if cart is empty
   if (!items.length) {
     return (
       <div className="container">
@@ -54,9 +76,11 @@ export default function Checkout() {
     );
   }
 
+  // Calculate shipping charge
   const shipping =
     subtotal >= FREE_SHIPPING_THRESHOLD ? 0 : SHIPPING_FEE;
 
+  // Update form fields
   const set = (key) => (e) => {
     setForm((prev) => ({
       ...prev,
@@ -64,6 +88,7 @@ export default function Checkout() {
     }));
   };
 
+  // Validate all form fields
   const validate = () => {
     const e = {};
 
@@ -96,20 +121,25 @@ export default function Checkout() {
     }
 
     setErrors(e);
+
     return Object.keys(e).length === 0;
   };
 
+  // Clear cart and navigate to order success page
   const finish = (order) => {
     clear();
+
     navigate(`/order-success/${order._id}`, {
       replace: true,
     });
   };
 
+  // Handle order submission
   const submit = async (ev) => {
     ev.preventDefault();
     setServerError('');
 
+    // Stop if form validation fails
     if (!validate()) {
       return push('Please fix the highlighted fields.', 'error');
     }
@@ -117,6 +147,7 @@ export default function Checkout() {
     setBusy(true);
 
     try {
+      // Send order details to backend
       const res = await createOrder({
         items: items.map((i) => ({
           slug: i.slug,
@@ -124,18 +155,22 @@ export default function Checkout() {
           size: i.size,
           colour: i.colour,
         })),
+
         shippingAddress: form,
         paymentMethod: 'COD',
         idempotencyKey: idemKey.current,
       });
 
+      // Complete order after successful response
       finish(res.order);
+
     } catch (err) {
       setServerError(err.message);
       setBusy(false);
     }
   };
 
+  // Reusable function to create form fields
   const field = (key, label, props = {}) => (
     <label className={errors[key] ? 'has-error' : ''}>
       {label}
@@ -155,13 +190,17 @@ export default function Checkout() {
 
   return (
     <div className="container section">
+
       <h1 className="page-title">Checkout</h1>
 
       <form className="cart-grid" onSubmit={submit} noValidate>
+
+        {/* Shipping details form */}
         <div className="form-card">
           <h2>Shipping Details</h2>
 
           <div className="form-grid">
+
             {field('fullName', 'Full name', {
               autoComplete: 'name',
             })}
@@ -196,8 +235,10 @@ export default function Checkout() {
             {field('state', 'State', {
               autoComplete: 'address-level1',
             })}
+
           </div>
 
+          {/* Payment method */}
           <h2>Payment Method</h2>
 
           <label className="radio">
@@ -209,6 +250,7 @@ export default function Checkout() {
             Pay when your order is delivered to your address.
           </small>
 
+          {/* Display server error */}
           {serverError && (
             <p className="err" role="alert">
               {serverError}
@@ -216,24 +258,30 @@ export default function Checkout() {
           )}
         </div>
 
+        {/* Order summary */}
         <aside className="summary">
           <h2>Your Order</h2>
 
+          {/* Display selected products */}
           <ul className="mini-list">
             {items.map((i) => (
               <li key={i.key}>
                 <span>
                   {i.name} × {i.qty}
+
                   <small>
                     {[i.size, i.colour].filter(Boolean).join(' · ')}
                   </small>
                 </span>
 
-                <span>{formatPrice(i.price * i.qty)}</span>
+                <span>
+                  {formatPrice(i.price * i.qty)}
+                </span>
               </li>
             ))}
           </ul>
 
+          {/* Display price details */}
           <p>
             <span>Subtotal</span>
             <span>{formatPrice(subtotal)}</span>
@@ -251,6 +299,7 @@ export default function Checkout() {
             <span>{formatPrice(subtotal + shipping)}</span>
           </p>
 
+          {/* Submit order */}
           <button
             className="btn btn-primary btn-block"
             type="submit"
@@ -262,6 +311,7 @@ export default function Checkout() {
           <Link to="/cart" className="btn btn-outline btn-block">
             Back to Cart
           </Link>
+
         </aside>
       </form>
     </div>

@@ -1,5 +1,7 @@
+
 import { useEffect, useMemo, useState } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
+
 import Icon from './Icons';
 import FilterSidebar from './FilterSidebar';
 import SortDropdown from './SortDropdown';
@@ -8,114 +10,310 @@ import Pagination from './Pagination';
 import HeroBanner from './HeroBanner';
 import SafeImage from './SafeImage';
 import { Loading, ErrorState, DemoNotice } from './States';
+
 import { getProducts, getCategories } from '../services/productService';
 import { PAGE_SIZE } from '../utils/constants';
 
-const csv = (v) => String(v || '').split(',').filter(Boolean);
+// Convert comma-separated values into an array
+const csv = (value) => String(value || '').split(',').filter(Boolean);
 
-// ONE reusable listing page used by Women, Men, Beauty, Accessories, Home & Living,
-// Collections, New Arrivals, Deals and Search. Filters live in the URL, so links can be shared.
-export default function CatalogView({ title, crumbs, hero, base = {}, promo, showFilters = true, emptyText }) {
-  const [sp, setSp] = useSearchParams();
-  const [state, setState] = useState({ loading: true, error: '', data: null, demo: false });
-  const [cats, setCats] = useState([]);
-  const [drawer, setDrawer] = useState(false);
+export default function CatalogView({
+  title,
+  crumbs,
+  hero,
+  base = {},
+  promo,
+  showFilters = true,
+  emptyText
+}) {
+  // URL parameters
+  const [searchParams, setSearchParams] = useSearchParams();
+
+  // Component states
+  const [productsData, setProductsData] = useState(null);
+  const [categories, setCategories] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState('');
+  const [isDemo, setIsDemo] = useState(false);
+  const [drawerOpen, setDrawerOpen] = useState(false);
+
   const baseKey = JSON.stringify(base);
 
-  const filters = { sub: csv(sp.get('sub')), cat: csv(sp.get('cat')), size: csv(sp.get('size')), colour: csv(sp.get('colour')), max: sp.get('max') || '', rating: sp.get('rating') || '' };
-  const sort = sp.get('sort') || 'popularity';
-  const page = Math.max(parseInt(sp.get('page'), 10) || 1, 1);
-  const view = sp.get('view') || 'grid';
-  const q = sp.get('q') || '';
-
-  // update URL params; changing any filter resets to page 1
-  const patch = (changes, keepPage = false) => {
-    const next = new URLSearchParams(sp);
-    Object.entries(changes).forEach(([k, v]) => {
-      const val = Array.isArray(v) ? v.join(',') : v;
-      if (val === '' || val === undefined || val === null) next.delete(k); else next.set(k, val);
-    });
-    if (!keepPage) next.delete('page');
-    setSp(next, { replace: true });
+  // Get filters from URL
+  const filters = {
+    sub: csv(searchParams.get('sub')),
+    cat: csv(searchParams.get('cat')),
+    size: csv(searchParams.get('size')),
+    colour: csv(searchParams.get('colour')),
+    max: searchParams.get('max') || '',
+    rating: searchParams.get('rating') || ''
   };
-  const clear = () => { const next = new URLSearchParams(); if (q) next.set('q', q); setSp(next, { replace: true }); };
 
-  useEffect(() => { getCategories().then((r) => setCats(r.categories)).catch(() => {}); }, []);
+  const sort = searchParams.get('sort') || 'popularity';
+  const page = Math.max(Number(searchParams.get('page')) || 1, 1);
+  const view = searchParams.get('view') || 'grid';
+  const search = searchParams.get('q') || '';
 
+  // Update URL filters
+  const updateFilters = (changes, keepPage = false) => {
+    const updatedParams = new URLSearchParams(searchParams);
+
+    Object.entries(changes).forEach(([key, value]) => {
+      const newValue = Array.isArray(value) ? value.join(',') : value;
+
+      if (newValue === '' || newValue == null) {
+        updatedParams.delete(key);
+      } else {
+        updatedParams.set(key, newValue);
+      }
+    });
+
+    if (!keepPage) {
+      updatedParams.delete('page');
+    }
+
+    setSearchParams(updatedParams, { replace: true });
+  };
+
+  // Clear all filters
+  const clearFilters = () => {
+    const params = new URLSearchParams();
+
+    if (search) params.set('q', search);
+
+    setSearchParams(params, { replace: true });
+  };
+
+  // Get categories from backend
+  useEffect(() => {
+    getCategories()
+      .then((data) => setCategories(data.categories))
+      .catch(() => {});
+  }, []);
+
+  // Prepare API parameters
   const apiParams = useMemo(() => ({
     ...base,
     category: base.category || filters.cat.join(','),
-    sub: filters.sub.join(','), size: filters.size.join(','), colour: filters.colour.join(','),
-    maxPrice: filters.max, rating: filters.rating, sort, page, limit: PAGE_SIZE, q: q || base.q,
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }), [baseKey, sp.toString()]);
+    sub: filters.sub.join(','),
+    size: filters.size.join(','),
+    colour: filters.colour.join(','),
+    maxPrice: filters.max,
+    rating: filters.rating,
+    sort,
+    page,
+    limit: PAGE_SIZE,
+    q: search || base.q
+  }), [baseKey, searchParams.toString()]);
 
-  const load = () => {
-    setState((s) => ({ ...s, loading: true, error: '' }));
+  // Load products from backend
+  const loadProducts = () => {
+    setLoading(true);
+    setError('');
+
     getProducts(apiParams)
-      .then((data) => setState({ loading: false, error: '', data, demo: data.demo }))
-      .catch((e) => setState({ loading: false, error: e.message, data: null, demo: false }));
+      .then((data) => {
+        setProductsData(data);
+        setIsDemo(data.demo);
+        setLoading(false);
+      })
+      .catch((err) => {
+        setError(err.message);
+        setProductsData(null);
+        setIsDemo(false);
+        setLoading(false);
+      });
   };
-  useEffect(load, [apiParams]); // eslint-disable-line react-hooks/exhaustive-deps
 
-  // sidebar options: one category -> its subcategories; otherwise the list of categories
-  const single = base.category && cats.find((c) => c.slug === base.category);
-  const meta = single
-    ? { ...single, mode: 'sub', categories: [] }
-    : { mode: 'cat', categories: cats, subcategories: [], sizes: [...new Set(cats.flatMap((c) => c.sizes))], colours: [...new Set(cats.flatMap((c) => c.colours))] };
+  useEffect(() => {
+    loadProducts();
+  }, [apiParams]); // eslint-disable-line react-hooks/exhaustive-deps
 
-  const d = state.data;
-  const from = d && d.total ? (d.page - 1) * d.limit + 1 : 0;
-  const to = d ? Math.min(d.page * d.limit, d.total) : 0;
-  const sidebar = <FilterSidebar meta={meta} mode={meta.mode} filters={filters} onChange={(c) => patch(c)} onClear={clear} />;
+  // Prepare category information for filters
+  const selectedCategory = base.category
+    ? categories.find((item) => item.slug === base.category)
+    : null;
+
+  const filterMeta = selectedCategory
+    ? { ...selectedCategory, mode: 'sub', categories: [] }
+    : {
+        mode: 'cat',
+        categories,
+        subcategories: [],
+        sizes: [...new Set(categories.flatMap((item) => item.sizes))],
+        colours: [...new Set(categories.flatMap((item) => item.colours))]
+      };
+
+  const total = productsData?.total || 0;
+  const from = total ? (productsData.page - 1) * productsData.limit + 1 : 0;
+  const to = productsData ? Math.min(productsData.page * productsData.limit, total) : 0;
+
+  // Filter sidebar
+  const sidebar = (
+    <FilterSidebar
+      meta={filterMeta}
+      mode={filterMeta.mode}
+      filters={filters}
+      onChange={(changes) => updateFilters(changes)}
+      onClear={clearFilters}
+    />
+  );
 
   return (
     <>
       {hero && <HeroBanner {...hero} />}
+
       <div className="container">
+
         <nav className="crumbs" aria-label="Breadcrumb">
-          {crumbs.map((c, i) => (i < crumbs.length - 1 ? <span key={c.label}><Link to={c.to}>{c.label}</Link> › </span> : <span key={c.label} aria-current="page">{c.label}</span>))}
+          {crumbs.map((item, index) => (
+            <span key={item.label}>
+              {index < crumbs.length - 1 ? (
+                <Link to={item.to}>{item.label}</Link>
+              ) : (
+                <span aria-current="page">{item.label}</span>
+              )}
+            </span>
+          ))}
         </nav>
-        {!hero && <h1 className="page-title">{title}{q && <>: “{q}”</>}</h1>}
-        {state.demo && <DemoNotice />}
+
+        {!hero && (
+          <h1 className="page-title">
+            {title} {search && `: ${search}`}
+          </h1>
+        )}
+
+        {isDemo && <DemoNotice />}
 
         <div className={`catalog ${showFilters ? '' : 'no-filters'}`}>
-          {showFilters && <aside className="sidebar-desktop" aria-label="Filters">{sidebar}</aside>}
-          <section id="products" aria-live="polite">
+
+          {showFilters && (
+            <aside className="sidebar-desktop">
+              {sidebar}
+            </aside>
+          )}
+
+          <section id="products">
+
             <div className="toolbar">
-              <p>{d ? (d.total ? `Showing ${from}–${to} of ${d.total} products` : '0 products found') : ' '}</p>
+              <p>
+                {productsData
+                  ? `Showing ${from}–${to} of ${total} products`
+                  : ''}
+              </p>
+
               <div className="toolbar-right">
-                {showFilters && <button className="btn btn-outline btn-sm filter-open" onClick={() => setDrawer(true)}><Icon name="filter" size={16} /> Filters</button>}
-                <SortDropdown value={sort} onChange={(v) => patch({ sort: v === 'popularity' ? '' : v })} />
-                <button className={`icon-btn ${view === 'grid' ? 'active' : ''}`} aria-label="Grid view" aria-pressed={view === 'grid'} onClick={() => patch({ view: '' }, true)}><Icon name="grid" /></button>
-                <button className={`icon-btn ${view === 'list' ? 'active' : ''}`} aria-label="List view" aria-pressed={view === 'list'} onClick={() => patch({ view: 'list' }, true)}><Icon name="list" /></button>
+
+                {showFilters && (
+                  <button
+                    className="btn btn-outline btn-sm filter-open"
+                    onClick={() => setDrawerOpen(true)}
+                  >
+                    <Icon name="filter" size={16} /> Filters
+                  </button>
+                )}
+
+                <SortDropdown
+                  value={sort}
+                  onChange={(value) =>
+                    updateFilters({ sort: value === 'popularity' ? '' : value })
+                  }
+                />
+
+                <button
+                  className="icon-btn"
+                  onClick={() => updateFilters({ view: '' }, true)}
+                  aria-label="Grid view"
+                >
+                  <Icon name="grid" />
+                </button>
+
+                <button
+                  className="icon-btn"
+                  onClick={() => updateFilters({ view: 'list' }, true)}
+                  aria-label="List view"
+                >
+                  <Icon name="list" />
+                </button>
+
               </div>
             </div>
-            {state.loading && <Loading text="Loading products…" />}
-            {state.error && <ErrorState message={state.error} onRetry={load} />}
-            {!state.loading && d && (
+
+            {loading && <Loading text="Loading products..." />}
+
+            {error && (
+              <ErrorState
+                message={error}
+                onRetry={loadProducts}
+              />
+            )}
+
+            {!loading && productsData && (
               <>
-                <ProductGrid products={d.products} view={view} emptyTitle={q ? `No results for “${q}”` : 'No products found'} emptyText={emptyText || 'Try different keywords, or clear your filters.'} />
-                <Pagination page={d.page} pages={d.pages} onChange={(n) => { patch({ page: n === 1 ? '' : n }, true); window.scrollTo({ top: 0, behavior: 'smooth' }); }} />
+                <ProductGrid
+                  products={productsData.products}
+                  view={view}
+                  emptyTitle={search ? `No results for ${search}` : 'No products found'}
+                  emptyText={emptyText || 'Try different keywords or clear your filters.'}
+                />
+
+                <Pagination
+                  page={productsData.page}
+                  pages={productsData.pages}
+                  onChange={(newPage) => {
+                    updateFilters(
+                      { page: newPage === 1 ? '' : newPage },
+                      true
+                    );
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                  }}
+                />
               </>
             )}
+
             {promo && (
               <section className="promo">
                 <SafeImage src={promo.image} alt={promo.alt} label={promo.alt} />
-                <div><p className="eyebrow">Special Offer</p><h2>{promo.title}</h2><p>{promo.text}</p></div>
-                <Link to={promo.to} className="btn btn-primary">Explore Now <Icon name="arrow" size={16} /></Link>
+
+                <div>
+                  <p className="eyebrow">Special Offer</p>
+                  <h2>{promo.title}</h2>
+                  <p>{promo.text}</p>
+                </div>
+
+                <Link to={promo.to} className="btn btn-primary">
+                  Explore Now <Icon name="arrow" size={16} />
+                </Link>
               </section>
             )}
+
           </section>
         </div>
       </div>
 
-      {drawer && (
-        <div className="drawer-back" onClick={() => setDrawer(false)}>
-          <div className="drawer" role="dialog" aria-modal="true" aria-label="Filters" onClick={(e) => e.stopPropagation()}>
-            <button className="icon-btn drawer-close" aria-label="Close filters" onClick={() => setDrawer(false)}><Icon name="close" /></button>
+      {drawerOpen && (
+        <div className="drawer-back" onClick={() => setDrawerOpen(false)}>
+          <div
+            className="drawer"
+            role="dialog"
+            aria-modal="true"
+            onClick={(event) => event.stopPropagation()}
+          >
+            <button
+              className="icon-btn drawer-close"
+              onClick={() => setDrawerOpen(false)}
+            >
+              <Icon name="close" />
+            </button>
+
             {sidebar}
-            <button className="btn btn-primary btn-block" onClick={() => setDrawer(false)}>Show {d?.total ?? ''} products</button>
+
+            <button
+              className="btn btn-primary btn-block"
+              onClick={() => setDrawerOpen(false)}
+            >
+              Show {total} products
+            </button>
           </div>
         </div>
       )}

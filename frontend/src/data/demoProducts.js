@@ -1,6 +1,24 @@
-// The demo catalogue is a copy of backend/data/products.json (run "npm run sync-catalogue" in backend to refresh).
-// It is used ONLY when the API server cannot be reached, so you can still browse the design.
+// Import product data from JSON file
 import data from './products.json';
 
-const demoProducts = data.map((p) => ({ ...p, _id: p.sku, discountPercent: p.originalPrice > p.price ? Math.round(((p.originalPrice - p.price) / p.originalPrice) * 100) : 0 }));
+// Prepare demo products
+const demoProducts = data.map((p) => {
+
+  // Calculate discount percentage
+  const discountPercent =
+    p.originalPrice > p.price
+      ? Math.round(
+          ((p.originalPrice - p.price) / p.originalPrice) * 100
+        )
+      : 0;
+
+  // Return product with additional details
+  return {
+    ...p,
+    _id: p.sku,
+    discountPercent
+  };
+});
+
+// Export demo products
 export default demoProducts;
