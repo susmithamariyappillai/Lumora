@@ -1,39 +1,20 @@
-
 const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
 
-const userSchema = new mongoose.Schema(
-  {
-    name: {
-      type: String,
-      required: true,
-      trim: true,
-      minlength: 2,
-      maxlength: 80,
-    },
+const userSchema = new mongoose.Schema({
+  name: String,
+  email: String,
+  passwordHash: String
+}, { timestamps: true });
 
-    email: {
-      type: String,
-      required: true,
-      unique: true,
-      lowercase: true,
-      trim: true,
-    },
+// check the password in user login
 
-    passwordHash: {
-      type: String,
-      required: true,
-      select: false,
-    },
-  },
-  { timestamps: true }
-);
-
-userSchema.methods.matchPassword = function (plain) {
-  return bcrypt.compare(plain, this.passwordHash);
+userSchema.methods.matchPassword = function(password) {
+  return bcrypt.compare(password, this.passwordHash);
 };
-
-userSchema.statics.hashPassword = (plain) =>
-  bcrypt.hash(plain, 10);
+// create a new user with hashed password
+userSchema.statics.hashPassword = function(password) {
+  return bcrypt.hash(password, 10);
+};
 
 module.exports = mongoose.model('User', userSchema);

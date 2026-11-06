@@ -1,17 +1,38 @@
 const jwt = require('jsonwebtoken');
 const User = require('../models/User');
 
-// Requires "Authorization: Bearer <token>". Puts the user on req.user.
 exports.protect = async (req, res, next) => {
   try {
-    const header = req.headers.authorization || '';
-    if (!header.startsWith('Bearer ')) return res.status(401).json({ success: false, message: 'Please log in to continue.' });
-    const decoded = jwt.verify(header.split(' ')[1], process.env.JWT_SECRET);
+    // Get token from request
+    const token = req.headers.authorization;
+
+    if (!token) {
+      return res.status(401).json({
+        message: 'Please login first'
+      });
+    }
+
+    // Verify token
+    const decoded = jwt.verify(
+      token.split(' ')[1],
+      process.env.JWT_SECRET
+    );
+
+    // Find user
     const user = await User.findById(decoded.id);
-    if (!user) return res.status(401).json({ success: false, message: 'Account not found. Please log in again.' });
+
+    if (!user) {
+      return res.status(401).json({
+        message: 'User not found'
+      });
+    }
+// save the user
     req.user = user;
     next();
-  } catch (err) {
-    return res.status(401).json({ success: false, message: 'Your session has expired. Please log in again.' });
+
+  } catch (error) {
+    res.status(401).json({
+      message: 'Invalid token. Please login again'
+    });
   }
 };

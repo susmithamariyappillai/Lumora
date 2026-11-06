@@ -7,7 +7,7 @@ const connectDB = async () => {
     throw new Error('MONGO_URI is missing. Copy .env.example to .env and add your MongoDB connection string.');
   }
   const conn = await mongoose.connect(uri, { serverSelectionTimeoutMS: 8000 });
-  console.log(`MongoDB connected: ${conn.connection.host}`);
+  console.log('MongoDB connected successfully');
 };
 
 module.exports = connectDB;
